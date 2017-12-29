@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>下福</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+  *{margin:0;padding:0;}
+  html,body{
+    height: 100%;
+  }
+  @keyframes animateFu {
+    0% {transform: translateY(-200px);}
+    100% {transform: translateY(800px);}
+  }
+  @keyframes fu1 {
+    0% {transform: rotate(20deg);}
+    100% {transform: rotate(660deg);}
+  }
+  @keyframes fu2 {
+    0% {transform: rotate(-20deg);}
+    100% {transform: rotate(400deg);}
+  }
+  @keyframes fu3 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+  }
+  @keyframes fu4 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-280deg);}
+  }
+  .fu-wrap{
+    transform: translateY(-480px);
+    height: 200px;
+    position: relative;
+    width:100%;
+    animation: animateFu 4s linear;
+  }
+  .big-fu{
+    width: 40px;
+    height: 40px;
+  }
+  .small-fu{
+    width: 30px;
+    height: 30px;
+  }
+  .fu{
+    position: absolute;
+    background: url(./fu_icon.png) no-repeat;
+    background-size: 100%;
+  }
+  .fu1{
+    animation: fu1 4s;
+  }
+  .fu2{
+    animation: fu2 4s;
+  }
+  .fu3{
+    animation: fu3 4s;
+  }
+  .fu4{
+    animation: fu4 4s;
+  }
+  </style>
+</head>
+<body>
+  <div class="fu-wrap">
+    <div class="fu1 fu small-fu" style="left: 10%;top:10px;"></div>
+    <div class="fu2 fu big-fu" style="left: 20%;top:60px;"></div>
+    <div class="fu3 fu small-fu" style="left: 30%;top:10px;"></div>
+    <div class="fu4 fu big-fu" style="left: 0;top:60px;"></div>
+    <div class="fu1 fu small-fu" style="left: 50%;top:20px;"></div>
+    <div class="fu2 fu big-fu" style="left: 50%;top:50px;"></div>
+    <div class="fu3 fu small-fu" style="left: 50%;top:100px;"></div>
+    <div class="fu2 fu big-fu" style="left: 60%;top:0px;"></div>
+    <div class="fu3 fu small-fu" style="left: 70%;top:100px;"></div>
+    <div class="fu4 fu big-fu" style="left: 80%;top:60px;"></div>
+    <div class="fu1 fu small-fu" style="left: 90%;top:20px;"></div>
+    <div class="fu2 fu big-fu" style="left: 25%;top:100px;"></div>
+    <div class="fu3 fu small-fu" style="left: 70%;top:40px;"></div>
+    <div class="fu4 fu big-fu" style="left: 80%;top:10px;"></div>
+  </div>
+</body>
+</html>
